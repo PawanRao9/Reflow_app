@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import '../presentation/product_detail_screen/product_detail_screen.dart';
+import '../presentation/login_screen/login_screen.dart';
+import '../presentation/dashboard/dashboard.dart';
+import '../presentation/registration_screen/registration_screen.dart';
+import '../presentation/inventory_management/inventory_management.dart';
+import '../presentation/product_catalog/product_catalog.dart';
+
+class AppRoutes {
+  // TODO: Add your routes here
+  static const String initial = '/';
+  static const String productDetail = '/product-detail-screen';
+  static const String login = '/login-screen';
+  static const String dashboard = '/dashboard';
+  static const String registration = '/registration-screen';
+  static const String inventoryManagement = '/inventory-management';
+  static const String productCatalog = '/product-catalog';
+
+  static Map<String, WidgetBuilder> routes = {
+    initial: (context) => const LoginScreen(),
+    productDetail: (context) => const ProductDetailScreen(),
+    login: (context) => const LoginScreen(),
+    dashboard: (context) => const Dashboard(),
+    registration: (context) => const RegistrationScreen(),
+    inventoryManagement: (context) => const InventoryManagement(),
+    productCatalog: (context) => const ProductCatalog(),
+    // TODO: Add your other routes here
+  };
+}
