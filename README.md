@@ -1,4 +1,4 @@
-# pruthwi
+# MenstrualCare Pro
 
 A new Flutter project.
 
